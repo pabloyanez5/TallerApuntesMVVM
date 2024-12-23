@@ -1,0 +1,69 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:Notes.ViewModels"
+             x:Class="Notes.Views.AllNotesPage"
+             Title="Your Notes"
+             NavigatedTo="ContentPage_NavigatedTo"
+             BackgroundColor="#F3F4F6">
+    <ContentPage.BindingContext>
+        <viewModels:NotesViewModel />
+    </ContentPage.BindingContext>
+
+    <!-- Toolbar -->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" 
+                     Command="{Binding NewCommand}" 
+                     IconImageSource="{FontImage Glyph='+', Color=Black, Size=22}" />
+    </ContentPage.ToolbarItems>
+
+    <!-- Main Content -->
+    <VerticalStackLayout Spacing="20" Padding="20">
+        <!-- Header -->
+        <Frame BackgroundColor="#6200EE" Padding="15" CornerRadius="10">
+            <Label Text="My Notes" 
+                   FontSize="28" 
+                   TextColor="White" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center" />
+        </Frame>
+
+        <!-- CollectionView -->
+        <CollectionView x:Name="notesCollection"
+                        ItemsSource="{Binding AllNotes}"
+                        Margin="0"
+                        SelectionMode="Single"
+                        SelectionChangedCommand="{Binding SelectNoteCommand}"
+                        SelectionChangedCommandParameter="{Binding Source={RelativeSource Self}, Path=SelectedItem}">
+            <!-- Message for empty list -->
+            <CollectionView.EmptyView>
+                <Label Text="No notes available. Add your first note!" 
+                       FontSize="18" 
+                       TextColor="Gray" 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center" />
+            </CollectionView.EmptyView>
+
+            <!-- Define layout for items -->
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
+            </CollectionView.ItemsLayout>
+
+            <!-- Design each item -->
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BorderColor="#E0E0E0" CornerRadius="10" Padding="10" HasShadow="True">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Text}" 
+                                   FontSize="22" 
+                                   FontAttributes="Bold" 
+                                   TextColor="#333333" />
+                            <Label Text="{Binding Date}" 
+                                   FontSize="14" 
+                                   TextColor="Silver" />
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

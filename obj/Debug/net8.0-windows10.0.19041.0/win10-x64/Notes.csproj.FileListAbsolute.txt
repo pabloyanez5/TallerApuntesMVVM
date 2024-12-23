@@ -1,0 +1,12 @@
+D:\QUINTO SEMESTRE UDLA\Progra IV\coco boricua\code\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Notes.csproj.AssemblyReference.cache
+D:\QUINTO SEMESTRE UDLA\Progra IV\coco boricua\code\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+D:\QUINTO SEMESTRE UDLA\Progra IV\coco boricua\code\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+D:\QUINTO SEMESTRE UDLA\Progra IV\coco boricua\code\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+D:\QUINTO SEMESTRE UDLA\Progra IV\coco boricua\code\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+D:\QUINTO SEMESTRE UDLA\Progra IV\coco boricua\code\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+D:\QUINTO SEMESTRE UDLA\Progra IV\coco boricua\code\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+D:\QUINTO SEMESTRE UDLA\Progra IV\coco boricua\code\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+D:\QUINTO SEMESTRE UDLA\Progra IV\coco boricua\code\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+D:\QUINTO SEMESTRE UDLA\Progra IV\coco boricua\code\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+D:\QUINTO SEMESTRE UDLA\Progra IV\coco boricua\code\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+D:\QUINTO SEMESTRE UDLA\Progra IV\coco boricua\code\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Notes.GeneratedMSBuildEditorConfig.editorconfig
